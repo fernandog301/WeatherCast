@@ -1,0 +1,32 @@
+.nav{
+    background-color: #9EA9C2;
+}
+
+/* Fonts Start*/
+@font-face{
+    font-family: Inter;
+    src: url(../fonts/Fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+@font-face {
+    font-family: Inter-Bold;
+    src: url(../fonts/Fonts/static/Inter-Bold.ttf);
+}
+@font-face {
+    font-family: Inter-Regular;
+    src: url(../fonts/Fonts/static/Inter-Regular.ttf);
+}
+@font-face {
+    font-family: Inter-ExtraBold;
+    src: url(../fonts/Fonts/static/Inter-ExtraBold.ttf);
+}
+/* Fonts End*/
+
+h1{
+    font-family: Inter-Bold;
+    color: #ffffff;
+    padding-left: 2%;
+}
+
+body{
+    background-color: #637c9d;
+}
