@@ -20,26 +20,46 @@ function errorFunc(error){
 
 let searchInput = document.getElementById("searchInput");
 let searchBtn = document.getElementById("searchBtn");
-let cityName = document.getElementById
+let cityName = document.getElementById("cityName");
 
 const apiKey = "f86e3df09941ea6ed9ee289a745f4331";
 const apiCurrentUrl = "https://openweathermap.org/current#name"; 
 const api5NameUrl = "https://openweathermap.org/current#name";
 
 
-async function searchWeather(city){
-    try{
-        const response = await fetch(apiCurrentUrl + city + '')
+// async function searchWeather(city){
+  
 
-    }catch(error){
-    }
+
+//     try{
+//         const response = await fetch(apiCurrentUrl + city + " ");
+        
+
+//     }catch(error){
+//     }
+// }
+
+
+async function apiCall(){
+  const promise = await fetch('https://openweathermap.org/current#name')
+  const data = await promise.json();
+  console.log(data.results[0].picture.large);
+  cityName,src = data.results[0].picture.large
+
 }
 
-async function logMovies() {
-  const response = await fetch("https://openweathermap.org/current#name");
-  const movies = await response.json();
-  console.log(movies);
-}
+apiCall();
+
+
+
+
+
+
+// async function logMovies() {
+//   const response = await fetch("https://openweathermap.org/current#name");
+//   const movies = await response.json();
+//   console.log(movies);
+// }
 
 
 
