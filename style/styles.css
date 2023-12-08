@@ -21,10 +21,34 @@
 }
 /* Fonts End*/
 
+.back{
+    background-color: #586AAB;
+}
+.darkBack{
+    background-color: #38487E;
+
+}
+
 h1{
     font-family: Inter-Bold;
     color: #ffffff;
     padding-left: 2%;
+}
+h2{
+    font-family: Inter-Bold;
+    color: #ffffff;
+}
+h3{
+    font-family: Inter-Bold;
+    color: #ffffff;
+}
+h4{
+    font-family: Inter-Bold;
+    color: #ffffff;
+}
+
+.round{
+    border-radius: 20%;
 }
 
 body{
